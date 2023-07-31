@@ -45,7 +45,7 @@ const MusicPage = () => {
     }
     return (
         <div>
-            <Heading title="音乐生成" desc="宫—商—角—徵—羽" icon={MessageSquare} iconColor="text-violet-500" bgColor="bg-violet-500/10"/>
+            <Heading title="音乐生成" desc="宫—商—角—徵—羽（功能较简单，只支持英文，待开发，后续会支持中文模式）" icon={MessageSquare} iconColor="text-violet-500" bgColor="bg-violet-500/10"/>
             <div className="px-4 lg:px-8">
                 <div>
                     <Form {...form}>
@@ -62,7 +62,7 @@ const MusicPage = () => {
                                             <Input 
                                                 className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                                                 disabled={isLoading}
-                                                placeholder="如何年入百万?"
+                                                placeholder="Piano solo?"
                                                 {...field}
                                             />
                                         </FormControl>

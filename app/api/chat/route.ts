@@ -27,10 +27,11 @@ export async function POST(req:Request) {
         const res = await openai.createChatCompletion({
             model: "gpt-3.5-turbo",
             messages,
-            // stream: true
+            stream: true
         },{
-            // responseType: "stream"
+            responseType: "stream"
         })
+        const stream = res.data
         return NextResponse.json(res.data.choices[0].message)
     } catch (error:any) {
         return new NextResponse(error,{status: 500})

@@ -58,7 +58,7 @@ const Sidebar = () => {
                 <div className="relative w-8 h-8 mr-4">
                     <Image fill alt="logo" src="/logo.png" />
                 </div>
-                <h1 className="text-2xl font-bold">蒲公英智能平台</h1>
+                <h1 className="text-2xl font-bold">蒲公英AI平台</h1>
             </Link>
             <div className="space-y-1">
                 {routes.map((route) => (
